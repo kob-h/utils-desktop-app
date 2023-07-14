@@ -7,6 +7,7 @@ def connect_to_wifi(ssid, password):
 
     try:
         # Execute the command
+        #some additional comment
         res = subprocess.run(command, shell=True, check=True)
         print(f"Connected to {ssid} successfully.")
     except subprocess.CalledProcessError as e:
